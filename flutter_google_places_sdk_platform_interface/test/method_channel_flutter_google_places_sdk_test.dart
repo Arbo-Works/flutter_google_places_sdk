@@ -92,9 +92,9 @@ void main() {
                 'countries': testCountries,
                 'typeFilter': 'CITIES',
                 'newSessionToken': newSessionToken,
-                'origin': origin.toJson(),
-                'locationBias': locationBias.toJson(),
-                'locationRestriction': locationRestriction.toJson(),
+                'origin': origin.toMap(),
+                'locationBias': locationBias.toMap(),
+                'locationRestriction': locationRestriction.toMap(),
               })
         ],
       );
