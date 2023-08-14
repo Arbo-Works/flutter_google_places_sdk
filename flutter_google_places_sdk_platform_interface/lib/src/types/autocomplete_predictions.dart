@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'place_type.dart';
 part 'autocomplete_predictions.freezed.dart';
 part 'autocomplete_predictions.g.dart';
 
@@ -21,7 +20,7 @@ class AutocompletePrediction with _$AutocompletePrediction {
     required String placeId,
 
     /// the list of place types associated with the place referred to by getPlaceId()
-    List<PlaceType>? placeTypes,
+    // List<Place.Type> placeTypes;
 
     /// the primary text of a place.
     required String primaryText,

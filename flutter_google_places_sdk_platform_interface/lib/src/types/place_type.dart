@@ -146,10 +146,8 @@ enum PlaceType {
   ZOO,
 }
 
-final placeTypeValuesMap = {
-  for (final placeType in PlaceType.values)
-    describeEnum(placeType): placeType
-};
+final placeTypeValuesMap = Map.fromIterable(PlaceType.values,
+    key: (item) => describeEnum(item), value: (item) => item);
 
 extension PlaceTypeDescriptor on PlaceType {
   String get value => toString();
@@ -160,6 +158,6 @@ extension PlaceTypeEnumParser on String {
     if (toUpperCase() == 'NULL') {
       return null;
     }
-    return placeTypeValuesMap[toUpperCase()];
+    return placeTypeValuesMap[this];
   }
 }

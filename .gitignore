@@ -44,8 +44,6 @@ build/
 .classpath
 .settings
 
-.fvm/
-
 # Generated dart files
 *.g.dart
 *.freezed.dart
