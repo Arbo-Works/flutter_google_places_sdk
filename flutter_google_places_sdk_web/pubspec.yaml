@@ -13,11 +13,7 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  flutter_google_places_sdk_platform_interface:
-    git:
-      url: https://github.com/Arbo-Works/flutter_google_places_sdk
-      ref: develop-2023.08.16-09.36
-      path: flutter_google_places_sdk_platform_interface
+  flutter_google_places_sdk_platform_interface: 0.2.4+3
   js: ^0.6.4
   google_maps: ^6.2.0
   collection: ^1.16.0
